@@ -1,0 +1,5 @@
+[build]
+target = "thumbv7em-none-eabihf"
+# Use the linker script provided by the `cortex-m-rt` crate, as per:
+# https://docs.rs/cortex-m-rt/0.7.3/cortex_m_rt/index.html#an-example
+rustflags = "-C link-arg=-Tlink.x"
